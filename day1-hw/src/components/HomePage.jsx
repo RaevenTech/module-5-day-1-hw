@@ -12,7 +12,7 @@ function HomePage() {
         
         const  resp = await fetch("https://strive-jobs-api.herokuapp.com/jobs?search=developer&limit=10")
         const data = await resp.json()
-        setJobSearch(data)
+        setJobSearch(data.data)
         console.log("Successful",
         data)
     }
@@ -25,13 +25,13 @@ function HomePage() {
       <>
     <NavBar />
     <div>
-        {jobs.length > 0 && (
+       
             <ul>
                 {jobs.map(job => (
-            <li key={jobs._id}>{jobs.company_name}</li>
+            <li key={job._id}>{job.company_name}</li>
                 ))}
             </ul>
-        )}
+        
     </div>
   </>
   )
