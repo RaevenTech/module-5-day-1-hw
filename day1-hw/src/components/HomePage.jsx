@@ -13,7 +13,8 @@ function HomePage() {
         const  resp = await fetch("https://strive-jobs-api.herokuapp.com/jobs?search=developer&limit=10")
         const data = await resp.json()
         setJobSearch(data)
-        alert("error")
+        console.log("Successful",
+        data)
     }
 
     useEffect(() => {
