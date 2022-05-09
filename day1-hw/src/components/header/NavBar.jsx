@@ -1,7 +1,10 @@
 import React from 'react'
+import { useState } from 'react'
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
 function NavBar() {
+ const [ userSearch, setUserSearch]= useState([])
+
   return (
       <>
     <Navbar bg="dark" variant="dark">
