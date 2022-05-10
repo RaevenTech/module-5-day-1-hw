@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect } from "react"
 import NavBar from './header/NavBar';
+import classes from './HomePage.module.css'
 
 
 
@@ -28,7 +29,7 @@ function HomePage() {
        
             <ul>
                 {jobs.map(job => (
-            <li key={job._id}>{job.company_name}</li>
+            <li className={classes.list} key={job._id}>{job.company_name}</li>
                 ))}
             </ul>
         
