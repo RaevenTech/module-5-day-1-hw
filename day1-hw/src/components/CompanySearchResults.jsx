@@ -28,7 +28,7 @@ const CompanySearchResults = () => {
         <Container>
             <Row>
                 <Col>
-                    {jobs.map(jobData => <Job key={jobData.id} data={jobData} />)}
+                    {jobs.map(jobData => <Job key={jobData._id} data={jobData} />)}
                 </Col>
             </Row>
         </Container>

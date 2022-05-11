@@ -1,6 +1,7 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col , Badge} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 
 const Job = ({ data }) => (
@@ -12,9 +13,10 @@ const Job = ({ data }) => (
             <Link to={`/${data.company_name}`}>{data.company_name}</Link>
         </Col>
         <Col xs={9}>
-            <a href={data.url} target='_blank' rel="noreferrer">{data.title}</a>
+            <Link to={data.url} target='_blank' rel="noreferrer">{data.title}</Link>
         </Col>
+        <Badge variant="info" className="btn-addFav">Favorite</Badge>
     </Row>
 )
 
-export default Job
+export default connect(Job)

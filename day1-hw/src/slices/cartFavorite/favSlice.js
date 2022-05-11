@@ -6,7 +6,18 @@ const favSlice = createSlice({
         content: [],
     },
     reducers: {
-        addToFav: () => {},
+        addToFav: (state, action) => {
+            return {
+                content: [...state.content, action.payload],
+            };
+        },
+    },
+    removeFav: (state, action) => {
+        return {
+            ...state,
+            content: state.content.filter((favJobs, i) => i !== action.payload),
+        };
     },
 });
 export default favSlice.reducer;
+export const { addToFav, removeFav } = favSlice.actions;
