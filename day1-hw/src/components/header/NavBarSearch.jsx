@@ -1,8 +1,7 @@
 import React from 'react'
-
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
-export default function NavBar() {
+export default function NavBarSearch() {
  
 
   return (

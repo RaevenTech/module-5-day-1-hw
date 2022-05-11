@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect } from "react"
-import NavBar from './header/NavBar';
+import NavBarSearch from './header/NavBarSearch';
 import classes from './HomePage.module.css'
 
 
@@ -24,7 +24,7 @@ function HomePage() {
 
   return (
       <>
-    <NavBar />
+    <NavBarSearch />
     <div>
        
             <ul>
