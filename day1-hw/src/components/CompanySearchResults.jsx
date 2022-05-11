@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Job from './Job'
-import uniqid from 'uniqid'
+//import uuid from 'react-uuid'
 import { useParams } from 'react-router-dom'
 
 const CompanySearchResults = () => {
@@ -28,7 +28,7 @@ const CompanySearchResults = () => {
         <Container>
             <Row>
                 <Col>
-                    {jobs.map(jobData => <Job key={uniqid()} data={jobData} />)}
+                    {jobs.map(jobData => <Job key={jobData.id{/*uuid()*/}} data={jobData} />)}
                 </Col>
             </Row>
         </Container>

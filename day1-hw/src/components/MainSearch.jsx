@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import Job from './Job'
-import uniqid from 'uniqid'
+//import uuid from 'react-uuid'
 
 
 class MainSearch extends Component {
@@ -47,7 +47,7 @@ class MainSearch extends Component {
                     </Col>
                     <Col xs={10} className='mx-auto mb-5'>
                         {
-                            this.state.jobs.map(jobData => <Job key={uniqid()} data={jobData} />)
+                            this.state.jobs.map(jobData => <Job key={jobData.id{/*uuid()*/}} data={jobData} />)
                         }
                     </Col>
                 </Row>
