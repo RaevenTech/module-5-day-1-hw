@@ -47,7 +47,7 @@ class MainSearch extends Component {
                     </Col>
                     <Col xs={10} className='mx-auto mb-5'>
                         {
-                            this.state.jobs.map(jobData => <Job key={jobData.id{/*uuid()*/}} data={jobData} />)
+                            this.state.jobs.map(jobData => <Job key={jobData.id} data={jobData} />)
                         }
                     </Col>
                 </Row>

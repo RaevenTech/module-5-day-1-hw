@@ -1,14 +1,12 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
 const favSlice = createSlice({
     name: "favorite",
     initialState: {
-        content: []
-    }
-    reducers:{
-        addToFav: () => {
-
-        },
+        content: [],
     },
-})
-export default favSlice.reducer
+    reducers: {
+        addToFav: () => {},
+    },
+});
+export default favSlice.reducer;
