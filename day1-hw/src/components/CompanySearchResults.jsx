@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Job from './Job'
-//import uuid from 'react-uuid'
 import { useParams } from 'react-router-dom'
 
 const CompanySearchResults = () => {
@@ -35,4 +34,4 @@ const CompanySearchResults = () => {
     )
 }
 
-export default CompanySearchResults
+export default CompanySearchResults;

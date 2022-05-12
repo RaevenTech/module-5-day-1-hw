@@ -15,7 +15,9 @@ const favSlice = createSlice({
     removeFav: (state, action) => {
         return {
             ...state,
-            content: state.content.filter((favJobs, i) => i !== action.payload),
+            content: state.content.filter(
+                (companyName) => companyName !== action.payload
+            ),
         };
     },
 });
